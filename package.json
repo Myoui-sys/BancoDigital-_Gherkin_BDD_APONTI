@@ -4,7 +4,7 @@
   "description": "Projeto de testes automatizados utilizando Gherkin e BDD (Behavior-Driven Development) para a aplicação BancoDigital.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^13.2.1",
     "@playwright/test": "^1.62.1",
+    "@types/node": "^22.10.2",
     "ts-node": "^10.9.2",
-    "typescript": "^7.0.2"
+    "typescript": "^5.7.2"
   }
 }

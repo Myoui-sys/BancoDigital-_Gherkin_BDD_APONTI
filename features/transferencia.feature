@@ -12,7 +12,6 @@ Feature: Operações de Transferência Financeira
    Then a transferência deve ser processada instantaneamente
    And o comprovante da operação deve ser gerado
 
-
  @HappyPath
  Scenario: Transferência TED no horário bancário com campos opcionais
    Given que o cliente Pessoa Jurídica possui saldo de R$ 5.000,00
@@ -163,4 +162,4 @@ Feature: Operações de Transferência Financeira
    When a sessão expira por inatividade no servidor
    And ele tenta confirmar a transação inserindo o código correto
    Then o sistema deve negar a validação
-   And redirecionar o cliente para o login sem efetivar a transferênciate your Gherkin code here...
+   And redirecionar o cliente para o login sem efetivar a transferência
