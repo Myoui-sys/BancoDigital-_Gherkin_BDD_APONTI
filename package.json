@@ -1,0 +1,27 @@
+{
+  "name": "bancodigital-_gherkin_bdd_aponti",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados utilizando Gherkin e BDD (Behavior-Driven Development) para a aplicação BancoDigital.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myoui-sys/BancoDigital-_Gherkin_BDD_APONTI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Myoui-sys/BancoDigital-_Gherkin_BDD_APONTI/issues"
+  },
+  "homepage": "https://github.com/Myoui-sys/BancoDigital-_Gherkin_BDD_APONTI#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@playwright/test": "^1.62.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
