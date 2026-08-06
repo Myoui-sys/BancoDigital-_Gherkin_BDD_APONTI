@@ -25,16 +25,16 @@ BancoDigital-_Gherkin_BDD_APONTI/
 │
 ├── features/
 │   ├── transferencia.feature
-│   └── step_definitions/
+│   └── steps_definitions/
 │
 ├── pages/
 │   ├── LoginPage.ts
 │   └── TransferenciaPage.ts
 │
 ├── support/
-│   └── hook.ts
+│   ├── hooks.ts
+│   └── world.ts
 │
-├── node_modules/
 ├── package.json
 ├── package-lock.json
 ├── tsconfig.json
@@ -56,13 +56,17 @@ npm install
 
 ## ▶️ Execução dos Testes
 
-Os testes poderão ser executados utilizando o Cucumber:
+Os testes podem ser executados usando o script padrão:
+
+```bash
+npm test
+```
+
+Ou diretamente com o Cucumber:
 
 ```bash
 npx cucumber-js
 ```
-
-> **Observação:** O comando poderá ser alterado conforme a configuração final do projeto.
 
 ---
 

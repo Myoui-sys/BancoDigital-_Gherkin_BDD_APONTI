@@ -466,7 +466,7 @@ Then(
 );
 
 Then(
-    "limpar os espaços em branco (trim) mantendo o alerta de campo obrigatório",
+    /^limpar os espaços em branco \(trim\) mantendo o alerta de campo obrigatório$/,
     async function (this: CustomWorld) {
         assert.equal(this.contexto.chavePreenchida, "espaços em branco");
         assert.equal(this.contexto.chavePreenchida.trim(), "espaços em branco");
@@ -557,7 +557,8 @@ Then(
     "o sistema deve reconhecer que o valor ultrapassou R$ {currency}",
     async function (this: CustomWorld, limite: number) {
         assert.equal(this.contexto.ultrapassouLimite, true);
-        assert.equal(limite > 2000, true);
+        assert.equal(limite, 2000);
+        assert.equal(this.contexto.valorOperacao, 2000.01);
     }
 );
 
